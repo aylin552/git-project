@@ -1,5 +1,5 @@
 #include "Snapshot.h"
-#include "Error.h"
+#include "Errors.h"
 using namespace std;
 
 int Snapshot::indexOf(const string& path) const {

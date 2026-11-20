@@ -1,5 +1,5 @@
-#ifndef ERROR_H
-#define ERROR_H
+#ifndef ERRORS_H
+#define ERRORS_H
 using namespace std;
 
 #include <string>
@@ -20,11 +20,11 @@ public:
 
 class FileNotFoundError : public GitError {
 public:
-    FileNotFoundError(const string& msg) : GitError(msg) {}
+    FileNotFoundError (const string& msg) : GitError(msg) {}
 };
 
 class InvalidArgumentError : public GitError {
 public:
-    InvalidArgumentError(const string& msg) : GitError(msg) {}
+    InvalidArgumentError (const string& msg) : GitError(msg) {}
 };
 #endif
